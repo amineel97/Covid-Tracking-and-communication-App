@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vaccination">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       tools:context=".vaccination">
+
+      <LinearLayout
+          android:id="@+id/topbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:padding="10dp">
+
+         <Space
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" />
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="current status"
+                android:layout_margin="10sp"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+         </LinearLayout>
+
+         <Space
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/my_gradient_drawable3"
+          android:layout_marginRight="10sp"
+          android:layout_marginLeft="10sp"
+          android:layout_marginBottom="10sp"
+          android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginRight="10sp"
+             android:layout_marginLeft="10sp"
+             android:layout_marginTop="10sp"
+             android:background="@drawable/my_gradient_drawable_white2"
+             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TxtPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="current position"
+                android:textColor="#424242"
+                android:textSize="17sp"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="10sp"
+             android:background="@drawable/my_gradient_drawable_white2"
+             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="member of your family"
+                android:textColor="#424242"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/RGroup0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+               <RadioButton
+                   android:id="@+id/family_yes"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif-smallcaps"
+
+                   android:text="yes"
+                   android:textColor="#424242"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+               <RadioButton
+                   android:id="@+id/family_no"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif-smallcaps"
+
+                   android:text="no"
+                   android:textColor="#424242"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+            </RadioGroup>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="10sp"
+             android:layout_marginLeft="10sp"
+             android:layout_marginBottom="10sp"
+             android:background="@drawable/my_gradient_drawable_white2"
+             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="the reported case is"
+                android:textColor="#424242"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/RGroup"
+                android:padding="10sp"
+                android:orientation="vertical">
+
+               <RadioButton
+                   android:id="@+id/critical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="#424242"
+
+                   android:text="critical"
+                   android:textSize="16sp"
+                   android:fontFamily="sans-serif-smallcaps"
+                   android:textStyle="bold" />
+
+               <RadioButton
+                   android:id="@+id/medium"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="medium"
+
+                   android:fontFamily="sans-serif-smallcaps"
+                   android:textColor="#424242"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+               <RadioButton
+                   android:id="@+id/notsure"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="not sure"
+                   android:fontFamily="sans-serif-smallcaps"
+                   android:textColor="#424242"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+            </RadioGroup>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10sp"
+             android:layout_marginRight="10sp"
+             android:background="@drawable/my_gradient_drawable_white2"
+             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="please provide information regarding the reported case"
+                android:textColor="#424242"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/info_case"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/edit_style2"
+                android:drawablePadding="@dimen/padding_16"
+                android:hint="Information"
+                android:inputType="text"
+                android:maxLines="5"
+                android:padding="16sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+
+         </LinearLayout>
+
+         <CheckBox
+             android:id="@+id/checkBox"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="15sp"
+             android:paddingBottom="15sp"
+             android:layout_margin="10sp"
+             android:paddingLeft="10sp"
+             android:fontFamily="sans-serif-smallcaps"
+             android:background="@drawable/my_gradient_drawable_white2"
+             android:text="confirm send my current reported location
+             with the provided information" />
+
+         <Button
+             android:id="@+id/confirm"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="10sp"
+             android:layout_marginLeft="10sp"
+             android:layout_marginBottom="10sp"
+             android:background="@drawable/my_gradient_drawable_white2"
+             android:text="submit"
+             android:textColor="#07D9B2"
+             android:textSize="16sp"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+   </LinearLayout>
+</ScrollView>

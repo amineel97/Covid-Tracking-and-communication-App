@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_gradient">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/nameEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_style"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:drawablePadding="@dimen/padding_16"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:hint="name"
+                        android:inputType="text"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_16"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/surnameEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_style"
+                        android:drawablePadding="@dimen/padding_16"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:hint="surname"
+                        android:inputType="text"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_16"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="email"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/birthday_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/birthday"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="birthday"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/passwordEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/passwordValidEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/password_repeat"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="verify password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countrycodepickerEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    app:ccp_autoDetectCountry="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    app:ccp_defaultNameCode="PL"
+                    app:ccp_showPhoneCode="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showFullName="true"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/birthday"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:fontFamily="sans-serif-smallcaps"
+                    app:ccp_contentColor="#ffffff"
+                    />
+
+
+                <Button
+                    android:id="@+id/create_account_button"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="create an account"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_background"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
